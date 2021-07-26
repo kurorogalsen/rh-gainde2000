@@ -6696,55 +6696,55 @@ textarea.form-control-lg {
 }
 
 .justify-content-start {
-  justify-content: flex-start !important;
+  justify-content: flex-start;
 }
 
 .justify-content-end {
-  justify-content: flex-end !important;
+  justify-content: flex-end;
 }
 
 .justify-content-center {
-  justify-content: center !important;
+  justify-content: center;
 }
 
 .justify-content-between {
-  justify-content: space-between !important;
+  justify-content: space-between ;
 }
 
 .justify-content-around {
-  justify-content: space-around !important;
+  justify-content: space-around ;
 }
 
 .justify-content-evenly {
-  justify-content: space-evenly !important;
+  justify-content: space-evenly ;
 }
 
 .align-items-start {
-  align-items: flex-start !important;
+  align-items: flex-start ;
 }
 
 .align-items-end {
-  align-items: flex-end !important;
+  align-items: flex-end ;
 }
 
 .align-items-center {
-  align-items: center !important;
+  align-items: center ;
 }
 
 .align-items-baseline {
-  align-items: baseline !important;
+  align-items: baseline ;
 }
 
 .align-items-stretch {
-  align-items: stretch !important;
+  align-items: stretch ;
 }
 
 .align-content-start {
-  align-content: flex-start !important;
+  align-content: flex-start ;
 }
 
 .align-content-end {
-  align-content: flex-end !important;
+  align-content: flex-end ;
 }
 
 .align-content-center {
