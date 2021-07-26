@@ -1,0 +1,53 @@
+html{
+    --primary-color: #20569e;
+    --secondary-color: #FA6400;
+    --success-color: #6DD400;
+}
+::after, ::before, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a, a:hover{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+input{
+    outline: none;
+    border: none;
+}
+header.container-fluid, footer.container-fluid{
+    background-color: var(--primary-color);
+    margin: 0;
+    position: fixed;
+    left: 0%;
+}
+header.container-fluid{
+    top: 0%;
+}
+footer.container-fluid{
+    bottom: 0%;
+}
+#header-top{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+}
+#header-top>div{
+    width: fit-content;
+    margin: 0;
+}
+.nav-link.active{
+    color: var(--secondary-color);
+}
