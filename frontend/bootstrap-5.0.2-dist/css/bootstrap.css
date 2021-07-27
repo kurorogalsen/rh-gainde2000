@@ -2187,11 +2187,11 @@ progress {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: var(--bs-secondary);
+  color: #212529;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: var(--bs-secondary);
+  color: #212529;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style/starter.css">
+    <link rel="stylesheet" href="../style/depot.css">
+    <title>GAINDE 2000: </title>
+</head>
+<body>
+    <header class="container-fluid d-flex row justify-content-center">
+        <div class="container-fluid d-flex row justify-content-center">
+          <div id="header-top" class="d-flex row justify-content-between col-12 col-md-10">
+                <div>
+                    <img width="17" src="../icon/clock.png" alt="horaire-icon"> Lundi - Vendredi : 8h - 17h <img width="17" src="../icon/marker.png" alt="location-icon"> Rue 9 X F Point E - 5ème etage
+                </div>
+
+                <div>
+                    <a href=""><img width="15" src="../icon/facebook.png" alt="facebook-icon"></a> <a href=""><img width="15" src="../icon/twitter.png" alt="twitter-icon"></a> <a href=""><img width="15" src="../icon/linkedin.png" alt="linkedin-icon"></a> <a href=""><img width="15" src="../icon/youtube.png" alt="youtube-icon"></a>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-10 d-flex row align-items-center" id="header-bottom">
+            <div>
+                <img height="40" src="../images/logo-white.png" alt="Logo GAINDE 2000">
+            </div>
+            <div>
+                <img height="40" src="../images/DNV-GL.png" alt="Logo DNV-GL">
+            </div>
+        </div>
+    </header>
+    
+    <main class="container-fluid d-flex column justify-content-center align-items-center">
+        <div class="col-12 col-md-11 col-lg-10 d-flex row justify-content-center align-content-center align-items-center">
+            <h1 class="col-11 col-sm-10 col-md-8 col-lg-5">REJOINDRE L'ÉQUIPE DE GAINDE 2000</h1>
+            <form class="col-11 col-md-9 col-lg-7 d-flex row justify-content-center align-content-start align-items-start" id="form-depot">
+                <div id="form-left" class="col-11 col-md-6 d-flex flex-column">
+                    <div class="col">
+                        <input type="text" class="form-control" required placeholder="NOM COMPLET *" aria-label="Name" id="form-nom">
+                    </div>
+                    <div class="col">
+                        <input type="tel" class="form-control" required placeholder="TÉLÉPHONE *" aria-label="Cellphone" id="form-tel">
+                    </div>
+                    <div class="col">
+                        <input type="email" class="form-control" required placeholder="ADRESSE MAIL *" aria-label="Mail" ic="form-mail">
+                    </div>
+                    <div class="col">
+                        <label for="form-birthday" class="form-label">DATE DE NAISSANCE *</label>
+                        <input type="date" class="form-control" required placeholder="DATE DE NAISSANCE *" aria-label="Birthday" id="form-birthday">
+                    </div>
+                    <div class="col">
+                        <label for="form-poste" class="form-label">POSTE SOUHAITÉ *</label>
+                        <select class="form-select" aria-label="Default select example" required id="form-poste">
+                            <option value="1">DÉVELOPPEUR WEB</option>
+                            <option value="2">DÉVELOPPEUR MOBILE</option>
+                            <option value="3">ASSISTANT RH</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="form-duree" class="form-label">DURÉE DU STAGE *</label>
+                        <select class="form-select" aria-label="Default select example" required id="form-duree">
+                            <option value="1">1 MOIS</option>
+                            <option value="2">2 MOIS</option>
+                            <option value="3">3 MOIS</option>
+                            <option value="4">4 MOIS</option>
+                            <option value="5">5 MOIS</option>
+                            <option value="6">6 MOIS</option>
+                            <option value="7">7 MOIS</option>
+                            <option value="8">8 MOIS</option>
+                            <option value="9">9 MOIS</option>
+                            <option value="10">10 MOIS</option>
+                            <option value="11">11 MOIS</option>
+                            <option value="12">12 MOIS</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="form-etude" class="form-label">NIVEAU D'ÉTUDE *</label>
+                        <select class="form-select" aria-label="Default select example" required id="form-etude">
+                            <option value="BACCALAUREAT">BACCALAURÉAT</option>
+                            <option value="LICENCE1">LICENCE1</option>
+                            <option value="LICENCE2">LICENCE2</option>
+                            <option value="LICENCE3">LICENCE3</option>
+                            <option value="MASTER1">MASTER1</option>
+                            <option value="MASTER2">MASTER2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="barre-verticale"></div>
+                <div id="form-right" class="col-11 col-md-6 d-flex flex-column">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="ÉCOLE (FACULTATIF)" aria-label="First name" id="form-ecole">
+                    </div>
+                    <div class="col">
+                        <label for="form-cv" class="form-label">VOTRE CV *</label>
+                        <input class="form-control" required type="file" id="form-cv">
+                    </div>
+                    <div class="col">
+                        <label for="form-lm" class="form-label">VOTRE LETTRE DE MOTIVATION *</label>
+                        <input class="form-control" required type="file" id="form-lm">
+                    </div>
+                    <div class="col">
+                        <p id="form-disclaimer">
+                            Assurez vous de remplir correctement tous les
+                            champs afin que votre dépôt puisse être traité
+                            correctement.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-self-center" style="margin-top: 50px;" id="validation-fin">
+                        <div class="g-recaptcha" data-sitekey="6LcBtcMbAAAAAJR-tjbJWKw-TfxkopRm4BPaCqvK" style="transform: scale(0.8);"></div>
+                        <button class="btn btn-success" id="form-submit">DÉPOSER</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container-fluid d-flex row justify-content-center">
+        <div class="col-12 col-md-10 d-flex row align-items-center" id="footer">            
+            <a class="nav-link  " href="#">@GAINDE 2000</a>
+
+            <ul class="nav justify-content-end ">                
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">OUR ACHIEVEMENTS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">OUR ACHIEVEMENTS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">ARTICLES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACTS</a>
+              </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
