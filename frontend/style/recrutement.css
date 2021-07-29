@@ -80,7 +80,7 @@ h3{
     font-weight: bold;
     margin-right: 5px;
 }
-.candidat{
+.candidat, .candidat-select, .candidat-noselect{
     background-color: var(--primary-color);
     margin: 10px;
     width: fit-content;
@@ -89,9 +89,27 @@ h3{
 }
 .candidat>*{
     padding: 5px;
-    color: white;
+    color: rgb(7, 2, 2);
+}
+.candidat-select>*{
+    padding: 5px;
+    color: rgb(7, 2, 2);
+}
+.candidat-noselect>*{
+    padding: 5px;
+    color: rgb(7, 2, 2);
 }
 .candidat>header{
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+    padding-bottom: 10px;
+}
+.candidat-select>header{
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+    padding-bottom: 10px;
+}
+.candidat-noselect>header{
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.281);
     padding-bottom: 10px;
@@ -100,15 +118,41 @@ h3{
     color: white;
     margin-left: 10px;
 }
+.candidat-select>header>h3{
+    color: white;
+    margin-left: 10px;
+}
+.candidat-noselect>header>h3{
+    color: white;
+    margin-left: 10px;
+}
 .candidat>div>div>h3{
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+.candidat-select>div>div>h3{
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+.candidat-noselect>div>div>h3{
     color: var(--secondary-color);
     margin-left: 10px;
 }
 .candidat>div>div:last-child{
     margin-top: 30px;
 }
+.candidat-select>div>div:last-child{
+    margin-top: 30px;
+}
+.candidat-noselect>div>div:last-child{
+    margin-top: 30px;
+}
+p>a{
+    text-decoration: underline;
+    color: white;
+}
 #all-candidat{
-    width: 75%;
+    width: 60%;
     background-color: rgba(0, 0, 0, 0.384);
     height: 75vh;
     overflow-y: scroll;
@@ -116,6 +160,27 @@ h3{
     padding: 15px;
     margin: 15px;
     border-radius: 15px;
+}
+#offer-confirmation{
+    width: fit-content;
+}
+#offer-confirmation>button{
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    margin: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#candidat-accept{
+    background-color: var(--bs-success);
+}
+#candidat-refuse{
+    background-color: var(--bs-danger);
+}
+form>.container{
+    margin: 10px 0px;
 }
 @media screen and (max-width: 988px) {
     #newOffer{

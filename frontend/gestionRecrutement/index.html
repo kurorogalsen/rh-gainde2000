@@ -154,6 +154,162 @@
             </div>
           </div>
           
+          <div id="offer-confirmation" class="d-flex flex-column justify-content-center align-items-center">
+            <button id="candidat-accept" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#all-candidat-accept">1</button>
+            <button id="candidat-refuse" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#all-candidat-refuse">1</button>
+          </div>
+
+          <div class="modal fade" id="all-candidat-accept" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Première Sélection (1/3)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-center align-items-center flex-wrap">
+                  <div class="candidat-select">
+                    <header class="container-fluid d-flex flex-row justify-content-center align-items-center">
+                      <img width="30" src="../icon/user.png">
+                      <h3>Moustapha Kachab</h3>
+                    </header>
+                    <div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Tel: </h3>
+                        <p> 777777777</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Email: </h3>
+                        <p> moustaphakachab@esp.sn</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Naissance: </h3>
+                        <p> 27 / 09 /2000</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Niveau d'étude: </h3>
+                        <p> Licence 2</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>École: </h3>
+                        <p> École Supérieure Polytechnique</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Durée: </h3>
+                        <p> 2 mois</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>CV: </h3>
+                        <p> <a href="" download="">télécharger</a></p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Lettre de motivation: </h3>
+                        <p> <a href="" download="">télécharger</a></p>
+                      </div>
+      
+                      <div class="container-fluid d-flex flex-row justify-content-between align-items-center">
+                        <button class="btn btn-danger">RETIRER</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mail-technique" data-bs-toggle="modal" >Terminer le tri</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="mail-technique" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+              <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Organisation des entretiens techniques (2/3)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-center align-items-center flex-wrap">
+                  <form class="container-fluid">
+                    <div class="container">
+                      <input type="email" class="form-control" id="exampleFormControlInput1" value="name@example.com" placeholder="Email">
+                    </div>
+                    <div class="container">
+                      <input type="text" class="form-control" id="exampleFormControlInput1" value="Stage Développement web, entretiens techniques" placeholder="Objet">
+                    </div>
+                    <div class="container">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+Bonjour.
+Suite à une première sélection, vous êtes conviés dans les locaux de GAINDE 2000 pour un entretien technique. La date retenue est le jeudi 22 Juillet à 10:00 à la salle de réunion au 4ème étage.
+                      </textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Envoyer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="all-candidat-refuse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Les profils rejetés</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-center align-items-center flex-wrap">
+                  <div class="candidat-noselect">
+                    <header class="container-fluid d-flex flex-row justify-content-center align-items-center">
+                      <img width="30" src="../icon/user.png">
+                      <h3>Moustapha Kachab</h3>
+                    </header>
+                    <div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Tel: </h3>
+                        <p> 777777777</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Email: </h3>
+                        <p> moustaphakachab@esp.sn</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Naissance: </h3>
+                        <p> 27 / 09 /2000</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Niveau d'étude: </h3>
+                        <p> Licence 2</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>École: </h3>
+                        <p> École Supérieure Polytechnique</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Durée: </h3>
+                        <p> 2 mois</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>CV: </h3>
+                        <p> <a href="" download="">télécharger</a></p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <h3>Lettre de motivation: </h3>
+                        <p> <a href="" download="">télécharger</a></p>
+                      </div>
+      
+                      <div class="container-fluid d-flex flex-row justify-content-between align-items-center">
+                        <button class="btn btn-success">Récuperer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-11 col-sm-8 col-md-6 col-lg-4 col-xl-3" id="newOffer">
             <img src="../icon/newOffer.jpg" alt="plus">
             <form>
@@ -239,6 +395,7 @@
             </div>
         </footer>
     </main>
+    
     <script src="../script/recrutement.js"></script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
