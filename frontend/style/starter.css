@@ -2,6 +2,7 @@ html{
     --primary-color: #20569e;
     --secondary-color: #FA6400;
     --success-color: #6DD400;
+    --alternative-color: #08274e;
 }
 ::after, ::before, *{
     margin: 0;
@@ -9,6 +10,7 @@ html{
     box-sizing: border-box;
 }
 main{
+    position: relative;
     min-height: 100vh;
     background-image: url(../images/background.png);
     background-position: center;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style/starter.css">
-    <link rel="stylesheet" href="style/accueil.css">
+    <link rel="stylesheet" href="style/connexion.css">
     <title>GAINDE 2000: </title>
 </head>
 <body>
@@ -36,23 +36,22 @@
             </div>
         </header>
         
-        <ul class="col-11 col-md-10">
-            <li class="menu-option col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                <a class="d-flex flex-column justify-content-center align-content-center align-items-center" href=""><img src="icon/recrutement.png" alt="recrutement"><button class="btn btn-secondary">GESTION <br> RECRUTEMENT</button></a>
-            </li>
-            <li class="menu-option col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                <a class="d-flex flex-column justify-content-center align-content-center align-items-center" href=""><img src="icon/stagiaire.png" alt="stagiaire"><button class="btn btn-secondary">GESTION <br> STAGIAIRES</button></a>
-            </li>
-            <li class="menu-option col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                <a class="d-flex flex-column justify-content-center align-content-center align-items-center" href=""><img src="icon/projet.png" alt="projet"><button class="btn btn-secondary">GESTION <br> PROJETS</button></a>
-            </li>
-            <li class="menu-option col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                <a class="d-flex flex-column justify-content-center align-content-center align-items-center" href=""><img src="icon/personnel.png" alt="personnel"><button class="btn btn-secondary">GESTION <br> PERSONNEL</button></a>
-            </li>
-            <li class="menu-option col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                <a class="d-flex flex-column justify-content-center align-content-center align-items-center" href=""><img src="icon/user.png" alt="user"><button class="btn btn-secondary">GESTION <br> UTILISATEURS</button></a>
-            </li>
-        </ul>
+        <form class=" col-11 col-sm-9 col-md-5 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-content-center align-items-center">
+            <img width="100" src="icon/user.png" alt="User">
+            <h2>CONNECTEZ-VOUS</h2>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="USERNAME*" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="PASSWORD*" required>
+            </div>
+            <p class="mb-3">
+                Assurez vous de remplir correctement tous les
+                champs afin que votre dépôt puisse être traité
+                correctement.
+            </p>
+            <button type="submit" class="btn btn-success">VALIDER</button>
+          </form>
 
         <footer class="container-fluid d-flex row justify-content-center">
             <div class="col-12 col-md-10 d-flex row align-items-center" id="footer">            

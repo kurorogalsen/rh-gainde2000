@@ -1,0 +1,136 @@
+main>div{
+    height: 100%;
+    position: relative;
+    flex-wrap: nowrap;
+}
+#newOffer{
+    position: fixed;
+    right: 8.97%;
+    bottom: 75px;
+    z-index: 50;
+}
+#newOffer>img{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    width: 70px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: -1;
+}
+#newOffer>form{
+    position: absolute;
+    right: -200%;
+    bottom: 0%;
+    padding: 0px;
+    background-color: var(--alternative-color);
+    border-radius: 15px;
+    color: white;
+    margin: 0;
+    z-index: 60;
+    transition: 0.4s ease-in-out;
+}
+#newOffer>form>header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 15px 15px 0px 0px;
+}
+#newOffer>form>div{
+    margin: 15px 10px 15px 10px;
+}
+#newOffer>form>div:last-child{
+    margin-bottom: 0;
+}
+#validation-offer>.btn{
+    margin: 10px;
+}
+.all-offer-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.all-offer-left{
+    flex-direction: column;
+/*     position: fixed;
+    left: 8.8%;
+    top: 10%; */
+    width: fit-content;
+}
+.offer{
+    background-color:whitesmoke;
+    border-radius: 10px;
+    margin: 15px;
+}
+.offer>div>*{
+    padding: 5px;
+}
+.offer>header{
+    background-color:var(--primary-color);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+h3{
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 5px;
+}
+.candidat{
+    background-color: var(--primary-color);
+    margin: 10px;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+}
+.candidat>*{
+    padding: 5px;
+    color: white;
+}
+.candidat>header{
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+    padding-bottom: 10px;
+}
+.candidat>header>h3{
+    color: white;
+    margin-left: 10px;
+}
+.candidat>div>div>h3{
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+.candidat>div>div:last-child{
+    margin-top: 30px;
+}
+#all-candidat{
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.384);
+    height: 75vh;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+@media screen and (max-width: 988px) {
+    #newOffer{
+        right: 15px;
+        bottom: 100px;
+    }
+    #newOffer>img{
+        position: absolute;
+        width: 50px;
+    }
+    main>div{
+        flex-wrap: wrap;
+    }
+    #all-candidat{
+        width: 90%;
+        height: fit-content;
+    }
+}
